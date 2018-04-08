@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[TripUsers]
+(
+	[TripId] BIGINT NOT NULL, 
+    [UserId] BIGINT NOT NULL,
+	PRIMARY KEY(TripId, UserId),
+	CONSTRAINT FK_TripUsers_Users FOREIGN KEY(UserId) REFERENCES Users(Id),
+	CONSTRAINT FK_TripUsers_Trips FOREIGN KEY(TripId) REFERENCES Trips(Id)
+)

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "db", "db", "{7C05FE85-7A1B-4F8B-A5A6-BDAF6B50EE4E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4F131EFB-A4C8-4A1A-A4FC-D52273088F27}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsFinder.Web", "src\TripsFinder.Web\TripsFinder.Web.csproj", "{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsFinder.BLL", "src\TripsFinder.BLL\TripsFinder.BLL.csproj", "{F4720DB4-EBC3-4015-B5D5-636AD9E87D92}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TripsFinder.DAL", "src\TripsFinder.DAL\TripsFinder.DAL.csproj", "{9FC67102-872A-4582-A0D8-3897B64ACAED}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TripsFinder.Database", "db\TripsFinder.Database\TripsFinder.Database.sqlproj", "{5765FA3D-817B-4182-A41C-E893DB683C39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4720DB4-EBC3-4015-B5D5-636AD9E87D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4720DB4-EBC3-4015-B5D5-636AD9E87D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4720DB4-EBC3-4015-B5D5-636AD9E87D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4720DB4-EBC3-4015-B5D5-636AD9E87D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9FC67102-872A-4582-A0D8-3897B64ACAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FC67102-872A-4582-A0D8-3897B64ACAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FC67102-872A-4582-A0D8-3897B64ACAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FC67102-872A-4582-A0D8-3897B64ACAED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5765FA3D-817B-4182-A41C-E893DB683C39}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F6B909EC-BD94-4D2A-9B3A-AF2921FAAE24} = {4F131EFB-A4C8-4A1A-A4FC-D52273088F27}
+		{F4720DB4-EBC3-4015-B5D5-636AD9E87D92} = {4F131EFB-A4C8-4A1A-A4FC-D52273088F27}
+		{9FC67102-872A-4582-A0D8-3897B64ACAED} = {4F131EFB-A4C8-4A1A-A4FC-D52273088F27}
+		{5765FA3D-817B-4182-A41C-E893DB683C39} = {7C05FE85-7A1B-4F8B-A5A6-BDAF6B50EE4E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1BE5313D-69B4-4769-9C2C-4D97669978C7}
+	EndGlobalSection
+EndGlobal
