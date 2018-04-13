@@ -1,35 +1,142 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿@import url('https://fonts.googleapis.com/css?family=Work+Sans:600');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+@import url('https://fonts.googleapis.com/css?family=Delius');
+
+body,
+html { height: 100%; }
+
+.scrolled { background: var(--white); }
+
+.parallaxImage {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* Wrapping element */
-/* Set some basic padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+#secondParallax {
+    background-image: url('../images/secondParallax.jpg');
 }
 
-/* Carousel */
-.carousel-caption p {
-    font-size: 20px;
-    line-height: 1.4;
+#thirdParallax { background-image: url('../images/thirdParallax.jpg'); }
+
+#mainParallax { background-image: url('../images/mainParallax.jpg'); }
+
+#fourthParallax { background-image: url('../images/fourthParallax.jpg'); }
+
+.travel-bg-story {
+    background: url('../images/story.jpg') center no-repeat;
+    background-size: cover;
 }
 
-/* Make .svg files in the carousel display properly in older browsers */
-.carousel-inner .item img[src$=".svg"] {
+.travel-bg-contact {
+    background: url('../images/contact.jpg') center no-repeat;
+    background-size: cover;
+}
+
+.travel-head { font-family: 'Work Sans', sans-serif; }
+
+.nav-link,
+.navbar-brand { font-family: 'Work Sans', sans-serif; }
+
+.travel-info { font-family: 'Fira Sans', sans-serif; }
+
+.box > svg {
+    color: #17A2B8;
+    font-size: 64px;
+}
+
+#mainParallax > .row {
+    position: relative;
+    top: 45%;
+}
+
+.button a span { position: relative; }
+
+.footer {
+    color: whitesmoke;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.footer:hover { opacity: 1; }
+
+#contact-form > p > label { cursor: pointer; }
+
+#contact-form {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 22px;
+}
+
+#contact-form > p > input,
+#contact-form > p > textarea {
+    font-family: 'Fira Sans', sans-serif;
+    border: none;
+    resize: none;
+    outline: none;
+    font-weight: 500;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+    padding: 1rem;
+    border: 2px dashed rgba(255, 255, 255, 0);
+    box-sizing: border-box;
+    cursor: text;
+}
+
+#contact-form > p > textarea:focus:required:valid {
+    border: 2px solid rgba(255, 255, 255, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+#contact-form > p > textarea:required:valid { border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+
+#contact-form > p > input { border-bottom: 2px dashed rgba(255, 255, 255, 0.5); }
+
+#contact-form > p > input:required,
+#contact-form > p > textarea:required { border-bottom: 2px dashed rgba(255, 255, 255, 0.5); }
+
+#contact-form > p > input:focus {
+    border-bottom: 2px dashed rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#contact-form > p > input:required:valid { border-bottom: 2px solid rgba(255, 255, 255, 0.2); }
+
+#contact-form > p > input:required:invalid { color: rgba(255, 255, 255, 0.5); }
+
+::-webkit-input-placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.4);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.send-icon { fill: rgba(255, 255, 255, 1); }
+
+.send-icon:hover {
+    fill: #000000;
+    cursor: pointer;
+}
+
+.quote { font-family: 'Delius', cursive; }
+
+.btn-discover span {
+    position: relative;
+    font-size: 32px;
+}
+
+.btn-discover span::before {
+    position: absolute;
+    top: 2px;
+    left: 0;
     width: 100%;
+    background: #fff;
+    color: #333;
+    content: attr(data-hover);
+    transform: rotateX(270deg);
+    transition: transform 0.6s;
+    transform-origin: 0 0;
+    pointer-events: none;
 }
 
-/* QR code generator */
-#qrCode {
-    margin: 15px;
-}
-
-/* Hide/rearrange for smaller screens */
-@media screen and (max-width: 767px) {
-    /* Hide captions */
-    .carousel-caption {
-        display: none;
-    }
-}
+.btn-discover:hover span::before { transform: rotateX(10deg); }
