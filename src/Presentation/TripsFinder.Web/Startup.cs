@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -51,6 +53,9 @@ namespace TripsFinder.Web
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();
+
+            // Add automapper dependecies
+            services.AddAutoMapper(config => config.AddProfiles(Assembly.Load("TripsFinder.Infrastructure")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,7 +73,7 @@ namespace TripsFinder.Web
             }
 
             app.UseStaticFiles();
-
+          
             app.UseAuthentication();
 
             app.UseMvc(routes =>

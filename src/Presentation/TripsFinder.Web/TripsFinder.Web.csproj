@@ -7,6 +7,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="3.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.1" />
@@ -23,6 +24,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\TripsFinder.Data.Domain\TripsFinder.Data.Domain.csproj" />
     <ProjectReference Include="..\..\Data\TripsFinder.Data\TripsFinder.Data.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\TripsFinder.Infrastructure\TripsFinder.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
