@@ -1,0 +1,27 @@
+{
+  "name": "TripsFinder.Web",
+  "homepage": "https://github.com/denisprofir/TripsFinderProject",
+  "authors": [
+    "denisprofir <denis.profir99@gmail.com>"
+  ],
+  "description": "MyInternshipProject",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "wwwroot/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Font-Awesome": "font-awesome#~5.0.10",
+    "jquery-validation": "~1.17.0",
+    "jquery-validation-unobtrusive": "~3.2.9",
+    "bootstrap": "~4.1.0",
+    "jquery": "~3.3.1"
+  }
+}
